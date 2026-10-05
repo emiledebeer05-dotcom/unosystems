@@ -246,7 +246,7 @@
       <!-- Lead form -->
       <div class="card" id="quote">
         <h2>Claim the October special</h2>
-        <p class="sub">Leave your details and we'll call you to book.</p>
+        <p class="sub">Polokwane only. We'll call you to book.</p>
 
         <form id="lead-form" novalidate>
           <div class="field">
@@ -271,14 +271,9 @@
               <div class="err">Please choose a door.</div>
             </div>
             <div class="field">
-              <label for="area">Area</label>
-              <select id="area" name="Area" required>
-                <option value="" selected disabled>Choose one</option>
-                <option>Polokwane</option>
-                <option>Elsewhere in Limpopo</option>
-                <option>Mpumalanga</option>
-              </select>
-              <div class="err">Please choose your area.</div>
+              <label for="suburb">Suburb</label>
+              <input id="suburb" name="Suburb" type="text" autocomplete="address-level2" placeholder="e.g. Bendor" required />
+              <div class="err">Please enter your suburb.</div>
             </div>
           </div>
           <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -301,7 +296,7 @@
       <div><b>Since 1997</b><span>Over 25 years in business</span></div>
       <div><b>7+ yrs</b><span>Minimum tech experience</span></div>
       <div><b>24/7</b><span>Emergency service</span></div>
-      <div><b>2 branches</b><span>Limpopo &amp; Mpumalanga</span></div>
+      <div><b>Polokwane</b><span>Local team, based in Ladine</span></div>
     </div>
   </div>
 
@@ -316,7 +311,7 @@
         <div class="inc">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M6 21v-9h12v9M6 15h12M6 18h12"/></svg></div>
           <h3>Aluzinc garage door</h3>
-          <p>Strong, practical and built to handle the Limpopo sun. Single or double, in standard sizes.</p>
+          <p>Strong, practical and built to handle the Polokwane sun. Single or double, in standard sizes.</p>
         </div>
         <div class="inc">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="3"/><circle cx="12" cy="8" r="2"/><path d="M10 14h4M10 17h4"/></svg></div>
@@ -329,7 +324,7 @@
           <p>Fitted in Polokwane by our own experienced technicians, not subcontractors.</p>
         </div>
       </div>
-      <p class="tcs">T's &amp; C's apply. Prices shown are for standard sizes. Installation included in Polokwane.</p>
+      <p class="tcs">T's &amp; C's apply. Prices shown are for standard sizes. Offer valid for installations in Polokwane only.</p>
     </div>
   </section>
 
@@ -352,7 +347,7 @@
   <section class="cta">
     <div class="wrap">
       <h2>Don't wait for the December rush.</h2>
-      <p>Single from R9 730 · Double from R12 150 · Motor, remotes &amp; installation included.</p>
+      <p>Single R9 730 · Double R12 150 · Motor, remotes &amp; installation included. Polokwane only.</p>
       <div class="cta-btns">
         <a href="#quote" class="primary">Claim the Special
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -364,8 +359,7 @@
 
   <footer>
     <div class="wrap">
-      <div><b>Polokwane (Head Office)</b>26 Yster St, Ladine, 0700<br /><a href="tel:0833024450">083 302 4450</a> · <a href="tel:0152931771">015 293 1771</a></div>
-      <div><b>eMalahleni</b>Portion 29 Kromdraai, R555, 1035<br /><a href="tel:0815207445">081 520 7445</a></div>
+      <div><b>Uno Systems Polokwane</b>26 Yster St, Ladine, 0700<br /><a href="tel:0833024450">083 302 4450</a> · <a href="tel:0152931771">015 293 1771</a></div>
       <div><b>Uno Systems</b>&copy; <span id="yr"></span> All rights reserved.<br /><a href="https://www.unosystems.co.za/">unosystems.co.za</a></div>
     </div>
   </footer>
@@ -388,7 +382,7 @@
       const btnArrow = document.getElementById('btn-arrow');
       const btnSpinner = document.getElementById('btn-spinner');
       const submitErr = document.getElementById('submit-err');
-      const fields = ['name', 'phone', 'door', 'area'].map(id => document.getElementById(id));
+      const fields = ['name', 'phone', 'door', 'suburb'].map(id => document.getElementById(id));
       const doorSelect = document.getElementById('door');
 
       function validateField(el) {
@@ -445,7 +439,7 @@
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify({
               ...data,
-              _subject: 'October special lead: ' + data.Door + ' (' + data.Area + ') — ' + data.Name,
+              _subject: 'October special lead: ' + data.Door + ' (' + data.Suburb + ') — ' + data.Name,
             }),
           });
 
