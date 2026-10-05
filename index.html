@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aluzinc Garage Door Special from R9 730 | Uno Systems</title>
+  <meta name="description" content="October special: Aluzinc garage door with motor, remotes and installation in Polokwane. Single R9 730, double R12 150. Beat the December rush with Uno Systems." />
+  <link rel="icon" href="img/fav.png" />
+
+  <!-- Meta Pixel: paste the client's pixel snippet here (and the Lead event on thank-you.html) -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --red: #cf0707; --red-dark: #a80505; --ink: #111113;
+      --grey: #f3f3f4; --muted: #5f5f66; --line: #e3e3e6; --white: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); background: var(--white); -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    .wrap { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+    .hidden { display: none !important; }
+    h1, h2, h3 { font-family: 'Archivo', sans-serif; line-height: 1.05; letter-spacing: -.02em; }
+
+    /* ---------- Offer strip ---------- */
+    .strip { background: var(--red); color: var(--white); text-align: center; font-size: 14px; font-weight: 700; padding: 10px 16px; }
+    .strip a { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ---------- Header ---------- */
+    header { position: absolute; top: 0; left: 0; right: 0; z-index: 10; }
+    header .wrap { height: 84px; display: flex; align-items: center; justify-content: space-between; }
+    header img { height: 46px; width: auto; }
+    .hdr-call {
+      display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--white);
+      font-weight: 700; font-size: 15px; padding: 10px 16px; border: 1.5px solid rgba(255,255,255,.35); border-radius: 999px;
+      transition: background .2s, border-color .2s;
+    }
+    .hdr-call:hover { background: rgba(255,255,255,.1); border-color: var(--white); }
+    .hdr-call svg { width: 16px; height: 16px; }
+
+    /* ---------- Hero ---------- */
+    .hero { position: relative; color: var(--white); background: var(--ink); padding: 124px 0 72px; overflow: hidden; }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: url('img/hero.jpg') center 60% / cover no-repeat;
+      opacity: .45;
+    }
+    .hero::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(100deg, rgba(17,17,19,.96) 25%, rgba(17,17,19,.7) 60%, rgba(17,17,19,.4));
+    }
+    .hero > .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: #ffb3b3; margin-bottom: 18px;
+    }
+    .eyebrow::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 4px rgba(207,7,7,.3); }
+    .hero h1 { font-size: clamp(38px, 5.6vw, 62px); font-weight: 900; margin-bottom: 18px; }
+    .hero h1 em { font-style: normal; color: var(--red); }
+    .hero .lead { font-size: 18px; line-height: 1.55; color: #d6d6da; max-width: 520px; margin-bottom: 26px; }
+
+    .prices { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 520px; margin-bottom: 24px; }
+    .price {
+      text-align: left; font: inherit; color: var(--white); cursor: pointer;
+      background: rgba(255,255,255,.06); border: 1.5px solid rgba(255,255,255,.18); border-radius: 14px; padding: 16px 18px;
+      backdrop-filter: blur(6px); transition: border-color .2s, background .2s, transform .15s;
+    }
+    .price:hover { border-color: var(--red); background: rgba(207,7,7,.12); transform: translateY(-2px); }
+    .price .lbl { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #bdbdc3; }
+    .price .amt { display: block; font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 34px; letter-spacing: -.02em; margin: 4px 0 2px; }
+    .price .size { font-size: 13px; color: #bdbdc3; }
+
+    .ticks { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 22px; }
+    .ticks li { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 15px; }
+    .ticks svg { flex: none; width: 20px; height: 20px; color: var(--red); }
+
+    /* ---------- Form card ---------- */
+    .card {
+      background: var(--white); color: var(--ink); border-radius: 18px; padding: 32px 28px;
+      box-shadow: 0 40px 80px -30px rgba(0,0,0,.6); border-top: 5px solid var(--red); scroll-margin-top: 20px;
+    }
+    .card h2 { font-size: 28px; font-weight: 800; margin-bottom: 6px; }
+    .card .sub { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
+    .field { margin-bottom: 14px; }
+    .field label { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+    .field input, .field select {
+      width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: var(--grey);
+      border: 1.5px solid transparent; border-radius: 10px; padding: 13px 14px; outline: none;
+      transition: border-color .2s, background .2s; appearance: none;
+    }
+    .field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%235f5f66' stroke-width='2'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+    }
+    .field input:focus, .field select:focus { border-color: var(--ink); background-color: var(--white); }
+    .field .err { display: none; color: var(--red); font-size: 13px; font-weight: 600; margin-top: 5px; }
+    .field.invalid input, .field.invalid select { border-color: var(--red); background-color: #fff5f5; }
+    .field.invalid .err { display: block; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .hp { position: absolute; left: -9999px; }
+    .btn {
+      width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin-top: 6px;
+      font: inherit; font-weight: 800; font-size: 17px; color: var(--white); background: var(--red);
+      border: 0; border-radius: 10px; padding: 17px 20px; cursor: pointer; transition: background .2s, transform .15s;
+    }
+    .btn:hover { background: var(--red-dark); transform: translateY(-1px); }
+    .btn:disabled { opacity: .7; cursor: wait; transform: none; }
+    .btn svg { width: 18px; height: 18px; }
+    .spinner { width: 18px; height: 18px; border: 2.5px solid rgba(255,255,255,.4); border-top-color: var(--white); border-radius: 50%; animation: spin .7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .submit-err { margin-top: 12px; padding: 12px 14px; border-radius: 10px; background: #fff0f0; color: var(--red-dark); font-size: 14px; font-weight: 600; }
+    .fine { margin-top: 14px; text-align: center; font-size: 13px; color: var(--muted); }
+    .fine a { font-weight: 700; color: var(--ink); }
+
+    /* ---------- Trust bar ---------- */
+    .trust { background: var(--red); color: var(--white); }
+    .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .trust div { padding: 22px 16px; text-align: center; border-left: 1px solid rgba(255,255,255,.2); }
+    .trust div:first-child { border-left: 0; }
+    .trust b { display: block; font-family: 'Archivo', sans-serif; font-size: 26px; font-weight: 900; }
+    .trust span { font-size: 14px; font-weight: 500; opacity: .9; }
+
+    /* ---------- Sections ---------- */
+    section { padding: 84px 0; }
+    .kicker { font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
+    .sec-head { max-width: 640px; margin-bottom: 40px; }
+    .sec-head h2 { font-size: clamp(32px, 4.4vw, 46px); font-weight: 900; }
+
+    .incl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .inc { border: 1px solid var(--line); border-radius: 16px; padding: 28px 24px; }
+    .inc .ic { width: 52px; height: 52px; border-radius: 12px; background: #fdeaea; color: var(--red); display: grid; place-items: center; margin-bottom: 18px; }
+    .inc .ic svg { width: 26px; height: 26px; }
+    .inc h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .inc p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+    .tcs { margin-top: 22px; font-size: 13px; color: var(--muted); }
+
+    .why { background: var(--grey); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; counter-reset: s; }
+    .step { background: var(--white); border-radius: 16px; padding: 28px 24px; counter-increment: s; }
+    .step::before {
+      content: '0' counter(s); display: block; font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 15px;
+      color: var(--red); margin-bottom: 14px;
+    }
+    .step h3 { font-size: 21px; font-weight: 800; margin-bottom: 8px; }
+    .step p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+    /* ---------- Final CTA ---------- */
+    .cta { background: var(--ink); color: var(--white); text-align: center; }
+    .cta h2 { font-size: clamp(32px, 4.6vw, 50px); font-weight: 900; margin-bottom: 14px; }
+    .cta p { color: #bdbdc3; font-size: 18px; margin-bottom: 30px; }
+    .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .cta-btns a { text-decoration: none; font-weight: 800; padding: 17px 28px; border-radius: 10px; display: inline-flex; align-items: center; gap: 10px; }
+    .cta-btns .primary { background: var(--red); color: var(--white); }
+    .cta-btns .primary:hover { background: var(--red-dark); }
+    .cta-btns .ghost { border: 1.5px solid rgba(255,255,255,.35); color: var(--white); }
+    .cta-btns .ghost:hover { border-color: var(--white); }
+    .cta-btns svg { width: 18px; height: 18px; }
+
+    footer { background: #0a0a0b; color: #8c8c94; font-size: 14px; padding: 36px 0; }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 20px 40px; justify-content: space-between; }
+    footer b { color: var(--white); display: block; margin-bottom: 4px; }
+    footer a { text-decoration: none; }
+    footer a:hover { color: var(--white); }
+
+    /* ---------- Sticky mobile CTA ---------- */
+    .sticky-cta { display: none; }
+
+    @media (max-width: 920px) {
+      .hero { padding: 100px 0 48px; }
+      .hero > .wrap { grid-template-columns: 1fr; gap: 36px; }
+      .hero .lead { font-size: 17px; }
+      .incl, .steps { grid-template-columns: 1fr; }
+      .trust .wrap { grid-template-columns: repeat(2, 1fr); }
+      .trust div:nth-child(3) { border-left: 0; }
+      .trust div:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,.2); }
+      section { padding: 60px 0; }
+    }
+    @media (max-width: 560px) {
+      header img { height: 38px; }
+      .hdr-call span { display: none; }
+      .hdr-call { padding: 10px; }
+      .price { padding: 14px; }
+      .price .amt { font-size: 27px; }
+      .card { padding: 26px 20px; }
+      .trust b { font-size: 21px; }
+      .trust span { font-size: 13px; }
+      .row { grid-template-columns: 1fr; gap: 0; }
+      .sticky-cta {
+        display: grid; grid-template-columns: 1fr 1.4fr; position: fixed; inset: auto 0 0; z-index: 20;
+        transform: translateY(110%); transition: transform .25s; box-shadow: 0 -8px 24px rgba(0,0,0,.2);
+      }
+      .sticky-cta.show { transform: none; }
+      .sticky-cta a { text-align: center; text-decoration: none; font-weight: 800; padding: 17px 10px; }
+      .sticky-cta .s-call { background: var(--ink); color: var(--white); }
+      .sticky-cta .s-form { background: var(--red); color: var(--white); }
+      footer { padding-bottom: 90px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="strip">🎄 October special: beat the December rush. <a href="#quote">Book your door now</a></div>
+
+  <div class="hero">
+    <header>
+      <div class="wrap">
+        <img src="img/logo.png" alt="Uno Systems" width="600" height="173" />
+        <a href="tel:0833024450" class="hdr-call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span>083 302 4450</span>
+        </a>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">October Special · Polokwane</div>
+        <h1>New garage door, motor &amp; install. <em>One price.</em></h1>
+        <p class="lead">Get your home festive-season ready with a strong, practical Aluzinc garage door, fully installed before the December rush.</p>
+
+        <div class="prices">
+          <button type="button" class="price" data-door="Single garage door (R9 730)">
+            <span class="lbl">Single door</span>
+            <span class="amt">R9 730</span>
+            <span class="size">2440 × 2130 mm</span>
+          </button>
+          <button type="button" class="price" data-door="Double garage door (R12 150)">
+            <span class="lbl">Double door</span>
+            <span class="amt">R12 150</span>
+            <span class="size">4880 × 2130 mm</span>
+          </button>
+        </div>
+
+        <ul class="ticks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Aluzinc door</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Motor &amp; remotes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Installation in Polokwane</li>
+        </ul>
+      </div>
+
+      <!-- Lead form -->
+      <div class="card" id="quote">
+        <h2>Claim the October special</h2>
+        <p class="sub">Leave your details and we'll call you to book.</p>
+
+        <form id="lead-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="Name" type="text" autocomplete="name" placeholder="e.g. Johan Smit" required />
+            <div class="err">Please enter your name.</div>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="Phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="e.g. 082 123 4567" required />
+            <div class="err">Please enter a valid phone number.</div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="door">Door</label>
+              <select id="door" name="Door" required>
+                <option value="" selected disabled>Choose one</option>
+                <option>Single garage door (R9 730)</option>
+                <option>Double garage door (R12 150)</option>
+                <option>Not sure / other size</option>
+              </select>
+              <div class="err">Please choose a door.</div>
+            </div>
+            <div class="field">
+              <label for="area">Area</label>
+              <select id="area" name="Area" required>
+                <option value="" selected disabled>Choose one</option>
+                <option>Polokwane</option>
+                <option>Elsewhere in Limpopo</option>
+                <option>Mpumalanga</option>
+              </select>
+              <div class="err">Please choose your area.</div>
+            </div>
+          </div>
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <button type="submit" class="btn" id="submit-btn">
+            <span id="btn-label">Book My Garage Door</span>
+            <svg id="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <span id="btn-spinner" class="spinner hidden"></span>
+          </button>
+          <div id="submit-err" class="submit-err hidden">Something went wrong. Please try again or call us on <a href="tel:0833024450">083 302 4450</a>.</div>
+          <p class="fine">Prefer to talk? Call <a href="tel:0833024450">083 302 4450</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust bar -->
+  <div class="trust">
+    <div class="wrap">
+      <div><b>Since 1997</b><span>Over 25 years in business</span></div>
+      <div><b>7+ yrs</b><span>Minimum tech experience</span></div>
+      <div><b>24/7</b><span>Emergency service</span></div>
+      <div><b>2 branches</b><span>Limpopo &amp; Mpumalanga</span></div>
+    </div>
+  </div>
+
+  <!-- What's included -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">What's included</div>
+        <h2>Everything you need. Nothing extra to pay.</h2>
+      </div>
+      <div class="incl">
+        <div class="inc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M6 21v-9h12v9M6 15h12M6 18h12"/></svg></div>
+          <h3>Aluzinc garage door</h3>
+          <p>Strong, practical and built to handle the Limpopo sun. Single or double, in standard sizes.</p>
+        </div>
+        <div class="inc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="3"/><circle cx="12" cy="8" r="2"/><path d="M10 14h4M10 17h4"/></svg></div>
+          <h3>Motor &amp; remotes</h3>
+          <p>Open and close from the car. No more getting out in the rain or the dark.</p>
+        </div>
+        <div class="inc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
+          <h3>Professional installation</h3>
+          <p>Fitted in Polokwane by our own experienced technicians, not subcontractors.</p>
+        </div>
+      </div>
+      <p class="tcs">T's &amp; C's apply. Prices shown are for standard sizes. Installation included in Polokwane.</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">How it works</div>
+        <h2>Booked in three easy steps.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Send your details</h3><p>Fill in the short form or call us. It takes less than a minute.</p></div>
+        <div class="step"><h3>We confirm &amp; book</h3><p>We'll call to confirm your door size and lock in an installation date.</p></div>
+        <div class="step"><h3>Door installed</h3><p>Our team fits your new door, motor and remotes. Ready for the festive season.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta">
+    <div class="wrap">
+      <h2>Don't wait for the December rush.</h2>
+      <p>Single from R9 730 · Double from R12 150 · Motor, remotes &amp; installation included.</p>
+      <div class="cta-btns">
+        <a href="#quote" class="primary">Claim the Special
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="tel:0833024450" class="ghost">Call 083 302 4450</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div><b>Polokwane (Head Office)</b>26 Yster St, Ladine, 0700<br /><a href="tel:0833024450">083 302 4450</a> · <a href="tel:0152931771">015 293 1771</a></div>
+      <div><b>eMalahleni</b>Portion 29 Kromdraai, R555, 1035<br /><a href="tel:0815207445">081 520 7445</a></div>
+      <div><b>Uno Systems</b>&copy; <span id="yr"></span> All rights reserved.<br /><a href="https://www.unosystems.co.za/">unosystems.co.za</a></div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="tel:0833024450" class="s-call">Call Now</a>
+    <a href="#quote" class="s-form">Claim the Special</a>
+  </div>
+
+  <script>
+    (function () {
+      document.getElementById('yr').textContent = new Date().getFullYear();
+
+      // TODO: replace with the client's Formspree form ID (set the delivery email in the Formspree dashboard)
+      const ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+
+      const form = document.getElementById('lead-form');
+      const submitBtn = document.getElementById('submit-btn');
+      const btnLabel = document.getElementById('btn-label');
+      const btnArrow = document.getElementById('btn-arrow');
+      const btnSpinner = document.getElementById('btn-spinner');
+      const submitErr = document.getElementById('submit-err');
+      const fields = ['name', 'phone', 'door', 'area'].map(id => document.getElementById(id));
+      const doorSelect = document.getElementById('door');
+
+      function validateField(el) {
+        const v = el.value.trim();
+        let ok = v.length > 0;
+        if (el.id === 'phone') ok = v.replace(/\D/g, '').length >= 9;
+        el.closest('.field').classList.toggle('invalid', !ok);
+        return ok;
+      }
+
+      fields.forEach(el => {
+        el.addEventListener('blur', () => validateField(el));
+        el.addEventListener('input', () => {
+          if (el.closest('.field').classList.contains('invalid')) validateField(el);
+        });
+        el.addEventListener('change', () => validateField(el));
+      });
+
+      // Clicking a price tile preselects that door and jumps to the form
+      document.querySelectorAll('.price').forEach(btn => {
+        btn.addEventListener('click', () => {
+          doorSelect.value = btn.dataset.door;
+          validateField(doorSelect);
+          document.getElementById('quote').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          document.getElementById('name').focus({ preventScroll: true });
+        });
+      });
+
+      function setLoading(on) {
+        submitBtn.disabled = on;
+        btnLabel.textContent = on ? 'Sending…' : 'Book My Garage Door';
+        btnArrow.classList.toggle('hidden', on);
+        btnSpinner.classList.toggle('hidden', !on);
+      }
+
+      form.addEventListener('submit', async e => {
+        e.preventDefault();
+        submitErr.classList.add('hidden');
+
+        const allValid = fields.map(validateField).every(Boolean);
+        if (!allValid) {
+          fields.find(f => f.closest('.field').classList.contains('invalid')).focus();
+          return;
+        }
+
+        // _gotcha is Formspree's honeypot: filled-in submissions are discarded server side
+        const data = Object.fromEntries(new FormData(form));
+
+        setLoading(true);
+
+        try {
+          const res = await fetch(ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({
+              ...data,
+              _subject: 'October special lead: ' + data.Door + ' (' + data.Area + ') — ' + data.Name,
+            }),
+          });
+
+          const json = await res.json().catch(() => ({}));
+          if (!res.ok || json.success === false || json.success === 'false') throw new Error('submission failed');
+
+          window.location.href = 'thank-you.html'; // Vercel cleanUrls serves this as /thank-you
+        } catch (_) {
+          setLoading(false);
+          submitErr.classList.remove('hidden');
+        }
+      });
+
+      // Show sticky mobile CTA once the form has scrolled out of view
+      const sticky = document.getElementById('sticky-cta');
+      const card = document.getElementById('quote');
+      new IntersectionObserver(([entry]) => {
+        sticky.classList.toggle('show', !entry.isIntersecting && entry.boundingClientRect.top < 0);
+      }).observe(card);
+    })();
+  </script>
+
+</body>
+</html>
